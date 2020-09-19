@@ -1,0 +1,31 @@
+<br>
+<h2 class=" text-primary text-center "> User Registration Form</h2>
+<div class="container">
+<form  ngNoForm [action]="url" novalidate >
+ 
+
+    <div class="form-group" >
+      <label>Enter firstName</label>
+      <input type="text" class="form-control" id="ufirst" placeholder="Enter firstName" autocomplete="off" ngModel name="FirstName">
+    </div>
+    <div class="form-group">
+      <label >Enter lastName</label>
+      <input type="text" class="form-control" ngModel name="LastName" id="ulast" placeholder="Enter lastName"autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label >Enter UserName</label>
+      <input type="text" class="form-control" ngModel name="UserName" id="uName" placeholder="Enter UserName"autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label >Enter Password</label>
+      <input type="password" class="form-control" id="uPass"ngModel name="UserPassword" placeholder="Enter Password"autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label >Enter Mobile Number</label>
+      <input type="text" class="form-control" id="unumber"ngModel name="UserNumber" placeholder="Enter Mobile Number"autocomplete="off">
+    </div>
+    <button type="submit" class="btn btn-success" (click)="register()" >Register</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="reset" class="btn btn-danger">Reset</button>
+   
+  </form>
+</div>

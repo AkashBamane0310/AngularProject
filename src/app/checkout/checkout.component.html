@@ -1,0 +1,33 @@
+<br>
+<h1 style="text-align: center; color:lightslategray;">Ckeckout</h1>
+<div class="container">
+
+    <form #userForm = ngForm novalidate>
+
+
+        <div class="form-group" >
+          <label>Enter Your firstName</label>
+          <input type="text" class="form-control" id="ufirst" placeholder="Enter firstName" autocomplete="off" ngModel name="FirstName">
+        </div>
+        <div class="form-group">
+          <label >Enter Your lastName</label>
+          <input type="text" class="form-control" ngModel name="LastName" id="ulast" placeholder="Enter lastName"autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label >Enter Your Address</label>
+          <input type="text" class="form-control" ngModel name="UserName" id="uName" placeholder="Enter UserName"autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label >Enter Mobile Number</label>
+          <input type="text" class="form-control" id="unumber"ngModel name="UserNumber" placeholder="Enter Mobile Number"autocomplete="off">
+        </div><br>
+      </form>
+      <div style="text-align: center;">
+        <button type="submit" routerLink="cheres" class="btn btn-success"  >Place Order</button>
+    </div>
+
+      
+
+      
+
+</div>
